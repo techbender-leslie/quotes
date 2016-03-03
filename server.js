@@ -1,7 +1,7 @@
 // Configuration / Dependencies
 var app = require('./config/config');
 
-// our routes
+// Routes
 var routes = require('./config/routes');
 app.use(routes);
 app.get('/', function (req, res) {
