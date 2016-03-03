@@ -1,0 +1,20 @@
+
+<% include head %>
+
+  <div class="container"> <br><br>
+
+    <div class='col-sm-8 col-sm-offset-2'>
+
+      <%- link_to('Back to Quotes', '/quotes') %> <br><br>
+
+      <blockquote>
+        <p><%= quote.body %></p>
+        <span class='attribution'>&#8211; <%= quote.author %></span>
+      </blockquote>
+
+    </div>
+
+
+  </div>
+
+<% include foot %>

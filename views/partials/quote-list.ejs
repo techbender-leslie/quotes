@@ -1,0 +1,29 @@
+<ul class="list-group" id="quotes-list">
+
+  <% for (var i = 0; i < quotes.length; i++) { %>
+
+    <li>
+      <div class='row'>
+
+        <div class='col-sm-9'>
+          <blockquote>
+            <p><%= quotes[i].body %></p>
+            <span class='attribution'>&#8211; <%= quotes[i].author %></span>
+          </blockquote>
+        </div>
+
+        <div class='col-sm-3'>
+          <i class='show-quote glyphicon glyphicon-zoom-in clickable'
+              data-_id="<%= quotes[i]._id %>"></i>
+          <i class='edit-quote glyphicon glyphicon-pencil clickable'
+              data-_id="<%= quotes[i]._id %>"></i>
+          <i class='delete-quote glyphicon glyphicon-remove clickable clickable-delete'
+              data-_id="<%= quotes[i]._id %>"></i>
+        </div>
+
+      </div>
+    </li>
+
+  <% } %>
+
+</ul>
